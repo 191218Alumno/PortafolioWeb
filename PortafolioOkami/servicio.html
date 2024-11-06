@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ookami Portfolio</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Ookami / Portafolio</h1>
+        <nav>
+          <a href="/index.html">About Me</a>
+          <a href="/portafolio.html">Portfolio</a>
+          <a href="/servicio.html">Services</a>
+          <a href="/contacto.html">Contact</a>
+        </nav>
+      </header>
+  
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="services-grid">
+      <div class="service-item" onclick="openServiceModal('service1')">
+        <h3>Servicio 1</h3>
+        <p>Descripción breve del servicio 1.</p>
+      </div>
+      <div class="service-item" onclick="openServiceModal('service2')">
+        <h3>Servicio 2</h3>
+        <p>Descripción breve del servicio 2.</p>
+      </div>
+      <div class="service-item" onclick="openServiceModal('service3')">
+        <h3>Servicio 3</h3>
+        <p>Descripción breve del servicio 3.</p>
+      </div>
+      <!-- pon mas servicios si es necesario -->
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2>Testimonios</h2>
+    <div class="testimonial">
+        <p>"Ookami es excelente en lo que hace. Me ayudó a transformar mi negocio."</p>
+        <h4>- Cliente Satisfecho</h4>
+    </div>
+    <div class="testimonial">
+        <p>"Increíble trabajo y atención al detalle. Definitivamente lo recomiendo."</p>
+        <h4>- Otro Cliente</h4>
+    </div>
+</section>
+
+  <!-- Modal Structure for Services -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeServiceModal()">&times;</span>
+      <h3 id="serviceModal-title"></h3>
+      <p id="serviceModal-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Ookami. Todos los derechos reservados.</p>
+    <nav class="footer-nav">
+        <a href="#privacy">Política de Privacidad</a>
+        <a href="#terms">Términos y Condiciones</a>
+        <a href="#contact">Contáctanos</a>
+    </nav>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
