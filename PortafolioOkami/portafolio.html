@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ookami Portfolio</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Ookami / Portafolio</h1>
+        <nav>
+          <a href="./index.html">About Me</a>
+          <a href="./portafolio.html">Portfolio</a>
+          <a href="./servicio.html">Services</a>
+          <a href="./contacto.html">Contact</a>
+        </nav>
+      </header>
+  
+  <section id="portfolio">
+    <h2>Portafolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item" onclick="openModal('project1')">
+        <img src="project1.jpg" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve del proyecto 1.</p>
+      </div>
+      <div class="portfolio-item" onclick="openModal('project2')">
+        <img src="project2.jpg" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve del proyecto 2.</p>
+      </div>
+      <!-- pon mas cosas del portafolio si es necesario -->
+    </div>
+  </section>
+  <section id="gallery">
+    <h2>Galería de Trabajos</h2>
+    <div class="gallery-grid">
+        <img src="image1.jpg" alt="Imagen 1">
+        <img src="image2.jpg" alt="Imagen 2">
+        <img src="image3.jpg" alt="Imagen 3">
+    </div>
+</section>
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <img id="modal-image" src="" alt="Imagen del proyecto">
+      <p id="modal-description"></p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Ookami. Todos los derechos reservados.</p>
+    <nav class="footer-nav">
+        <a href="#privacy">Política de Privacidad</a>
+        <a href="#terms">Términos y Condiciones</a>
+        <a href="#contact">Contáctanos</a>
+    </nav>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
