@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control</title>
+  <link rel="stylesheet" href=".css/style.css">
+</head>
+<body>
+  <!-- Header con los botones de navegación -->
+  <header>
+    <div>
+      <h1>Panel de Control</h1>
+    </div>
+    <div>
+      <button class="menu-btn" onclick="window.location.href='index.html'">Menú Principal</button>
+      <button class="logout-btn" onclick="window.location.href='login.html'">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <!-- CRUD Section -->
+  <main>
+    <h2>Administrar Productos</h2>
+
+    <!-- Formulario para agregar un producto -->
+    <form action="submit_product.html" method="POST" enctype="multipart/form-data">
+      <input type="text" id="product-name" name="product-name" placeholder="Nombre del Producto" required>
+      <input type="file" id="product-image" name="product-image" accept="image/*" required>
+      <textarea id="product-description" name="product-description" placeholder="Descripción del Producto" required></textarea>
+      <input type="submit" value="Agregar Producto">
+    </form>
+
+    <div class="product-list">
+      <!-- Ejemplo de producto -->
+      <div class="product-item">
+        <img src=".img/eevee.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p class="product-description">Descripción del producto 1.</p>
+        <button class="edit-btn">Editar</button>
+        <button class="delete-btn">Eliminar</button>
+      </div>
+      <!-- Agregar más productos aquí -->
+    </div>
+  </main>
+
+  <!-- Modal (Si se usa en el CRUD) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Detalles del Producto</h3>
+      <img src="product1.jpg" alt="Producto 1" id="modal-image">
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
